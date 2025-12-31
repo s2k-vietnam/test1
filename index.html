@@ -40,6 +40,7 @@
 }
         body {
             background-image: url("https://img5.pic.in.th/file/secure-sv1/S2K-VN.jpg") !important;
+            background-repeat: no-repeat !important;
             background-size: cover !important;
             background-position: center center !important;
             font-family: "Noto Sans Lao", sans-serif;
@@ -722,15 +723,6 @@
             }
         `;
         document.head.appendChild(style);
-
-        // Loading animation
-        window.addEventListener('load', () => {
-            document.body.style.opacity = '0';
-            document.body.style.transition = 'opacity 0.5s ease';
-            setTimeout(() => {
-                document.body.style.opacity = '1';
-            }, 100);
-        });
     </script>
 </body>
 </html>
